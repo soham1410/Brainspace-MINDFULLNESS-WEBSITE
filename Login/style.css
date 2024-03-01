@@ -1,67 +1,82 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
+
 body {
-  font-size: 120%;
+  font-size: 16px; /* 16px is standard, 120% might be too large for some users */
   background: #F8F8FF;
+  font-family: Arial, sans-serif; /* Providing a fallback font */
 }
 
 .header {
   width: 30%;
-  margin: 50px auto 0px;
+  margin: 50px auto 0;
   color: white;
-  background: #5F9EA0;
+  background: cadetblue;
   text-align: center;
   border: 1px solid #B0C4DE;
   border-bottom: none;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0 0;
   padding: 20px;
 }
+
 form, .content {
   width: 30%;
-  margin: 0px auto;
+  margin: 0 auto;
   padding: 20px;
   border: 1px solid #B0C4DE;
   background: white;
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 0 0 10px 10px;
 }
+
 .input-group {
-  margin: 10px 0px 10px 0px;
+  margin: 10px 0;
 }
+
 .input-group label {
   display: block;
   text-align: left;
-  margin: 3px;
+  margin: 3px 0;
 }
+
 .input-group input {
   height: 30px;
-  width: 93%;
+  width: calc(100% - 20px); /* Adjusted for padding */
   padding: 5px 10px;
   font-size: 16px;
   border-radius: 5px;
   border: 1px solid gray;
 }
+
 .btn {
   padding: 10px;
   font-size: 15px;
   color: white;
-  background: #5F9EA0;
+  background: red;
   border: none;
   border-radius: 5px;
+  cursor: pointer; /* Adding pointer cursor to indicate interactivity */
 }
-.error {
-  width: 92%; 
-  margin: 0px auto; 
-  padding: 10px; 
-  border: 1px solid #a94442; 
-  color: #a94442; 
-  background: #f2dede; 
-  border-radius: 5px; 
+
+.error, .success {
+  width: 92%;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 5px;
   text-align: left;
 }
+
+.error {
+  border: 1px solid #a94442;
+  color: #a94442;
+  background: #f2dede;
+}
+
 .success {
-  color: #3c763d; 
-  background: #dff0d8; 
   border: 1px solid #3c763d;
+  color: #3c763d;
+  background: #dff0d8;
   margin-bottom: 20px;
+}
