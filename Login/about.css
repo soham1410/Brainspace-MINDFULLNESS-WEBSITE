@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 50%, 79%); /* Light gray background color */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: hsl(0, 37%, 56%); /* Dark gray text color */
+    margin-top: 20px; /* Add some space above the heading */
+}
+
+.content {
+    background-color: #fff; /* White background color for content */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to content */
+    margin: 20px auto; /* Center content horizontally with some space around */
+    padding: 20px;
+    max-width: 600px; /* Limit content width for better readability */
+}
+
+p {
+    color: hsl(0, 60%, 66%); /* Gray text color */
+    margin-bottom: 15px; /* Add some space between paragraphs */
+}
+
+h2 {
+    color: hsl(0, 37%, 56%); /* Dark gray text color for headings */
+}
+

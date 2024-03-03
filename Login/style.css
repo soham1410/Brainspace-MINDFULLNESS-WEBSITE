@@ -1,82 +1,148 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; /* Include padding and border in element's total width and height */
-}
-
-body {
-  font-size: 16px; /* 16px is standard, 120% might be too large for some users */
-  background: #F8F8FF;
-  font-family: Arial, sans-serif; /* Providing a fallback font */
-}
-
-.header {
-  width: 30%;
-  margin: 50px auto 0;
-  color: white;
-  background: cadetblue;
-  text-align: center;
-  border: 1px solid #B0C4DE;
-  border-bottom: none;
-  border-radius: 10px 10px 0 0;
-  padding: 20px;
-}
-
-form, .content {
-  width: 30%;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #B0C4DE;
-  background: white;
-  border-radius: 0 0 10px 10px;
-}
-
-.input-group {
-  margin: 10px 0;
-}
-
-.input-group label {
-  display: block;
-  text-align: left;
-  margin: 3px 0;
-}
-
-.input-group input {
-  height: 30px;
-  width: calc(100% - 20px); /* Adjusted for padding */
-  padding: 5px 10px;
-  font-size: 16px;
-  border-radius: 5px;
-  border: 1px solid gray;
-}
-
-.btn {
-  padding: 10px;
-  font-size: 15px;
-  color: white;
-  background: red;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer; /* Adding pointer cursor to indicate interactivity */
-}
-
-.error, .success {
-  width: 92%;
-  margin: 0 auto;
-  padding: 10px;
-  border-radius: 5px;
-  text-align: left;
-}
-
-.error {
-  border: 1px solid #a94442;
-  color: #a94442;
-  background: #f2dede;
-}
-
-.success {
-  border: 1px solid #3c763d;
-  color: #3c763d;
-  background: #dff0d8;
-  margin-bottom: 20px;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+  }
+  
+  body {
+    font-size: 16px; /* 16px is standard, 120% might be too large for some users */
+    
+    font-family: Arial, sans-serif; /* Providing a fallback font */
+    background-image: url('bg6.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  
+  .header {
+    width: 30%;
+    margin: 50px auto 0;
+    color: white;
+    background: hsl(0, 60%, 66%);
+    text-align: center;
+    border: 1px solid #B0C4DE;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    padding: 20px;
+  }
+  
+  form, .content {
+    width: 30%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #B0C4DE;
+    background: white;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  .input-group {
+    margin: 10px 0;
+  }
+  
+  .input-group label {
+    display: block;
+    text-align: left;
+    margin: 3px 0;
+  }
+  
+  .input-group input {
+    height: 30px;
+    width: calc(100% - 20px); /* Adjusted for padding */
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+  
+  .btn {
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Adding pointer cursor to indicate interactivity */
+  }
+  
+  .error, .success {
+    width: 92%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+  }
+  
+  .error {
+    border: 1px solid #a94442;
+    color: #a94442;
+    background: #f2dede;
+  }
+  
+  .success {
+    border: 1px solid #3c763d;
+    color: vhsl(0, 60%, 66%);
+    background: #dff0d8;
+    margin-bottom: 20px;
+  }
+  body{
+    font-family: Arial, sans-serif;
+    background-image: url('bg6.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top 40%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  header {
+    background-color: hsl(0, 62%, 90%);
+    color: hsl(0, 32%, 48%);
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: hsl(0, 60%, 66%);
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 40px 0;
+  }
+  
+  section h2 {
+    font-size: 24px;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: hsl(0, 62%, 90%);
+    color: hsl(0, 60%, 66%);
+    padding: 20px 0;
+    text-align: left;
+  }
+ 
+ 
+  
