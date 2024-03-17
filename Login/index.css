@@ -8,7 +8,7 @@ body {
   font-size: 16px; /* 16px is standard, 120% might be too large for some users */
   
   font-family: Arial, sans-serif; /* Providing a fallback font */
-  background-image: url('bg7.png');
+  background-image: url('bg8.png');
   background-size: cover;
   background-repeat: no-repeat;
  /* background-position: bottom;*/
@@ -86,7 +86,7 @@ form, .content {
 }
 body{
   font-family: Arial, sans-serif;
-  background-image: url('bg7.png');
+  background-image: url('bg8.png');
   background-size: cover;
   background-repeat: no-repeat;
   
@@ -103,7 +103,7 @@ body{
 header {
   background-color: hsl(28, 77%, 70%);
   color: hsl(27, 86%, 38%);
-  padding: 10px 0;
+  padding: 5px 0;
 }
 
 header h1 {
@@ -142,7 +142,7 @@ footer {
   width: 100%;
   background-color:hsl(28, 77%, 70%);
   color: hsl(27, 85%, 46%);
-  padding: 10px 0;
+  padding: 3px 0;
   text-align: left;
 }
 

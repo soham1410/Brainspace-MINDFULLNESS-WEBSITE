@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: hsl(285, 61%, 80%);
+    color: hsl(285, 68%, 66%);
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    background-color: #fff; /* White background color for content */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to content */
+    margin: 20px auto; /* Center content horizontally with some space around */
+    padding: 20px;
+    max-width: 600px; 
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    color: hsl(285, 63%, 28%);
+    text-align: center;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* Styling the bullet points */
+ul li::before {
+    content: "•";
+    color: hsl(285, 61%, 36%); /* Bullet color */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Adding spacing between bullet point and text */
+ul li {
+    padding-left: 1em;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    h2 {
+        font-size: 24px;
+    }
+}
+
+h1 {
+    color: hsl(285, 78%, 46%);
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+   
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: hsl(285, 86%, 31%);
+}
+
+/* Styling for even rows */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Styling for odd rows */
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}

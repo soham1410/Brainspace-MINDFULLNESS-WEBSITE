@@ -28,6 +28,7 @@
     <div class="container">
       <h1>Calm Quest</h1>
       <header>
+        
   <div class="container">
  
     <nav>
@@ -36,6 +37,9 @@
         <li><a href="benefit.php">Benefits</a></li>
         <li><a href="practise.php">Practices</a></li>
         <li><a href="contacts.php">Contacts</a></li>
+        <li><a href="feedback.php">Feedback</a></li>
+        <li><a href="stress.php">Stress</a></li>
+        <li><a href="anxiety.php">Anxiety</a></li>
         <!-- Add more navigation items as needed -->
       </ul>
     </nav>

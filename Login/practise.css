@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: hsl(144, 41%, 64%);
+    color: hsl(145, 72%, 33%);
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    background-color: #fff; /* White background color for content */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to content */
+    margin: 20px auto; /* Center content horizontally with some space around */
+    padding: 20px;
+    max-width: 600px; 
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #026d22;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* Styling the bullet points */
+ul li::before {
+    content: "•";
+    color: hsl(145, 72%, 33%); /* Bullet color */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Adding spacing between bullet point and text */
+ul li {
+    padding-left: 1em;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    h2 {
+        font-size: 24px;
+    }
+}
