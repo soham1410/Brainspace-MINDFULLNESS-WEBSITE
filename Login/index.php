@@ -37,7 +37,7 @@
         <li><a href="benefit.php">Benefits</a></li>
         <li><a href="practise.php">Practices</a></li>
         <li><a href="contacts.php">Contacts</a></li>
-        <li><a href="feedback.php">Feedback</a></li>
+        <li><a href="feedback_form.php">Feedback</a></li>
         <li><a href="stress.php">Stress</a></li>
         <li><a href="anxiety.php">Anxiety</a></li>
         <!-- Add more navigation items as needed -->
