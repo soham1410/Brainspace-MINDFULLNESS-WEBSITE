@@ -110,5 +110,6 @@ if ($result->num_rows > 0) {
 // Close the database connection
 $conn->close();
 ?>
+<a href="index.php">&larr; Go back to homepage</a>
 </body>
 </html>

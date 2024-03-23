@@ -69,7 +69,7 @@
             background-color: #f2f2f2;
             font-family: Arial, sans-serif;
             text-align: center;
-            background-image: url('f2.png');
+            background-image: url('f3.png');
         }
     </style>
 </head>
@@ -91,7 +91,7 @@
                 <input type="radio" id="star5" name="rating" value="5"><label for="star5">☆</label>
             </div>
         <input type="submit" value="Submit Feedback">
-       
+        <a href="index.php">&larr; Go back to homepage</a>
             
     
 
