@@ -24,21 +24,25 @@
 </head>
 <body>
 
-  <header>
-    <div class="container">
-      <h1>Calm Quest</h1>
-      <header>
-        
+<header>
   <div class="container">
- 
+    <h1>Calm Quest</h1>
     <nav>
       <ul>
         <li><a href="about.php">About</a></li>
+        <li><a href="tp.php">tp</a></li>
         <li><a href="benefit.php">Benefits</a></li>
         <li><a href="practise.php">Practices</a></li>
         <li><a href="contacts.php">Contacts</a></li>
         <li><a href="feedback_form.php">Feedback</a></li>
-        <li><a href="stress.php">Stress</a></li>
+        <li class="dropdown stress-dropdown">
+          <a href="#" class="dropbtn">Stress</a>
+          <div class="dropdown-content">
+            <a href="blog.php">Blog  Writing </a>
+            <a href="breathing.php">Breathing Technique</a>
+            <!-- Add more dropdown items as needed -->
+          </div>
+        </li>
         <li><a href="anxiety.php">Anxiety</a></li>
         <!-- Add more navigation items as needed -->
       </ul>
@@ -46,11 +50,7 @@
   </div>
 </header>
 
-
-    
- 
-
-  <footer id="contact">
+<footer id="contact">
     <div class="container">
       <h2>Contact Us</h2>
       <p>If you have any questions or inquiries, feel free to reach out to us:</p>
@@ -65,5 +65,15 @@
     <?php endif ?>
     </div>
   </footer>
+</body>
+</html>
+
+<script>
+  // JavaScript to toggle active class on stress dropdown
+  document.querySelector('.stress-dropdown').addEventListener('click', function() {
+    this.classList.toggle('active');
+  });
+</script>
+
 </body>
 </html>

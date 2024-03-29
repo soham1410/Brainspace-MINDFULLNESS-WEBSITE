@@ -75,7 +75,7 @@
 </head>
 <body>
     
-    <form action="submit_feedback.php" method="post">
+    <form action="feedbackshow.php" method="post">
         <h1>FEEDBACKS</H1>
         <label for="name">Your Name:</label><br>
         <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
