@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Box Breathing</title>
+<style>
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #8fd8ff;
+    background-image: url('https://www.health.qld.gov.au/__data/assets/image/0026/150885/taking-a-moment-for-your-breathing-1080x1080.jpg'); /* Specify the path to your image */
+    background-size: cover; /* Cover the entire background */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold; /* Bold headings */
+    color: #002147; /* Heading color */
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 100vh;
+    padding-bottom: 20px;
+    animation: fadeIn 1s ease;
+  }
+  .instructions {
+    max-width: 500px;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    animation: fadeIn 1s ease;
+  }
+  .instructions:hover {
+    transform: translateY(-5px);
+  }
+  h1 {
+    text-align: center;
+    color: #002147;
+    margin-bottom: 20px;
+  }
+  p {
+    color: #002147;
+    line-height: 1.6;
+  }
+  li {
+    color: #002147;
+    line-height: 1.6;
+  }
+  img {
+    margin: 10px;
+    max-width: 400px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(85, 99, 113, 0.1);
+    transition: transform 0.5s ease;
+  }
+  img:hover {
+    transform: scale(1.05);
+  }
+  .buttons-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  button {
+    margin: 0 10px;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    color: #ffffff;
+    background-color: #003171;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  .step {
+    font-family: 'Snell Roundhand', cursive;
+    color: rgb(0, 0, 0); /* Change this to whatever color you want */
+  }
+  /* CSS for YouTube video container */
+  .video-container {
+    text-align: center; 
+    min-height: 50vh;
+    padding-bottom: 20px;
+    margin-top: top;
+  }
+  .video-container iframe {
+    max-width: 100%;
+    height: top;
+    transition: transform 0.3s ease;
+  }
+  .video-container iframe:hover {
+    transform: scale(1.02);
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="instructions">
+    <h2>Instructions:</h2>
+    <li><span class="step">STEP1:</span> Sit or lie down comfortably in a quiet place.</li>
+    <li><span class="step">STEP2:</span> Close your eyes and relax your body.</li>
+    <li><span class="step">STEP3:</span> Inhale deeply through your nose for a count of 4.</li>
+    <li><span class="step">STEP4:</span> Hold your breath for a count of 4.</li>
+    <li><span class="step">STEP5:</span> Exhale slowly and completely through your mouth for a count of 4.</li>
+    <li><span class="step">STEP6:</span> Hold your breath for a count of 4.</li>
+    <li><span class="step">STEP7:</span> Repeat this process for several breaths, focusing on the rhythm of your breathing.</li>
+  </div>
+  <img src="https://i.pinimg.com/736x/10/54/11/105411f5de21a9646c1d7c106c0983a5.jpg" alt="Box Breathing Technique" />
+</div>
+<!-- Embedding YouTube Video -->
+<div class="video-container">
+  <iframe width="360" height="215" src="https://www.youtube.com/embed/0fM3c4Ypr_8" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="timer">05:00</div>
+<div class="buttons-container">
+  <button id="startBtn">Start Timer</button>
+  <button id="stopBtn">Stop Timer</button>
+</div>
+<script>
+  let timerInterval;
+  let seconds = 300; // 5 minutes in seconds
+  function startTimer() {
+    timerInterval = setInterval(() => {
+      seconds--;
+      if (seconds < 0) {
+        clearInterval(timerInterval);
+        document.getElementById('timer').textContent = '00:00';
+        // You can add additional actions here when the timer finishes
+      } else {
+        const minutes = Math.floor(seconds / 60);
+        const remainingSeconds = seconds % 60;
+        const displayMinutes = String(minutes).padStart(2, '0');
+        const displaySeconds = String(remainingSeconds).padStart(2, '0');
+        document.getElementById('timer').textContent = `${displayMinutes}:${displaySeconds}`;
+      }
+    }, 1000);
+  }
+  function stopTimer() {
+    clearInterval(timerInterval);
+    seconds = 300; // Reset seconds to 5 minutes
+    document.getElementById('timer').textContent = '05:00';
+  }
+  document.getElementById('startBtn').addEventListener('click', startTimer);
+  document.getElementById('stopBtn').addEventListener('click', stopTimer);
+</script>
+</body>
+</html>
