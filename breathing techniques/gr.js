@@ -2,40 +2,63 @@ document.addEventListener("DOMContentLoaded", function() {
     const circle = document.getElementById("circle");
     const startBtn = document.getElementById("startBtn");
     const stopBtn = document.getElementById("stopBtn");
+    const completeStopBtn = document.getElementById("completeStopBtn");
+    const resetBtn = document.getElementById("resetBtn");
     const timerDisplay = document.getElementById("timer");
+    let inhaleTimeout;
+    let holdBreathTimeout;
+    let exhaleTimeout;
     let animationInterval;
-    let timerInterval;
-    let timerSeconds = 300; // 5 minutes in seconds
+    let isBreathing = false;
+    let remainingTime = 300; // 5 minutes in seconds
 
     startBtn.addEventListener("click", startBreathing);
     stopBtn.addEventListener("click", stopBreathing);
+    completeStopBtn.addEventListener("click", completeStopExercise);
+    resetBtn.addEventListener("click", resetExercise);
 
     function startBreathing() {
-        startBtn.style.display = "none";
-        stopBtn.style.display = "inline-block";
-        startTimer();
-        inhale();
-        animationInterval = setInterval(function() {
-            holdBreath();
-            setTimeout(function() {
-                exhale();
-                setTimeout(inhale, 4000); // Adjust the breathing timing as needed
-            }, 4000); // Adjust the breathing timing as needed
-        }, 12000); // Adjust the breathing timing as needed
+        if (!isBreathing) {
+            isBreathing = true;
+            startBtn.disabled = true;
+            stopBtn.style.display = "inline-block";
+            completeStopBtn.style.display = "none";
+            inhale();
+            animationInterval = setInterval(function() {
+                holdBreath();
+                holdBreathTimeout = setTimeout(function() {
+                    exhale();
+                    exhaleTimeout = setTimeout(inhale, 5000); // Adjust the timing as needed
+                }, 5000); // Adjust the timing as needed
+            }, 15000); // Adjust the timing as needed
+        }
     }
 
     function stopBreathing() {
-        startBtn.style.display = "inline-block";
-        stopBtn.style.display = "none";
-        clearInterval(animationInterval);
-        resetCircle();
-        stopTimer();
+        if (isBreathing) {
+            isBreathing = false;
+            startBtn.disabled = false;
+            clearInterval(animationInterval);
+            clearTimeout(inhaleTimeout);
+            clearTimeout(holdBreathTimeout);
+            clearTimeout(exhaleTimeout);
+            circle.style.width = "100px";
+            circle.style.height = "100px";
+            circle.textContent = "";
+        }
     }
 
-    function resetCircle() {
-        circle.style.width = "100px";
-        circle.style.height = "100px";
-        circle.textContent = "";
+    function completeStopExercise() {
+        stopBreathing();
+        timerDisplay.textContent = "5:00";
+        remainingTime = 300;
+    }
+
+    function resetExercise() {
+        completeStopExercise();
+        startBtn.disabled = false;
+        stopBtn.style.display = "none";
+        completeStopBtn.style.display = "none";
     }
 
     function inhale() {
@@ -56,26 +79,18 @@ document.addEventListener("DOMContentLoaded", function() {
         circle.textContent = "Exhale";
     }
 
-    function startTimer() {
-        timerInterval = setInterval(() => {
-            timerSeconds--;
-            if (timerSeconds < 0) {
-                clearInterval(timerInterval);
-                timerDisplay.textContent = '00:00';
-                // You can add additional actions here when the timer finishes
-            } else {
-                const minutes = Math.floor(timerSeconds / 60);
-                const remainingSeconds = timerSeconds % 60;
-                const displayMinutes = String(minutes).padStart(2, '0');
-                const displaySeconds = String(remainingSeconds).padStart(2, '0');
-                timerDisplay.textContent = `${displayMinutes}:${displaySeconds}`;
-            }
-        }, 1000);
-    }
+    // Timer function
+    setInterval(updateTimer, 1000);
 
-    function stopTimer() {
-        clearInterval(timerInterval);
-        timerSeconds = 300; // Reset seconds to 5 minutes
-        timerDisplay.textContent = '05:00';
+    function updateTimer() {
+        if (isBreathing) {
+            remainingTime--;
+            const minutes = Math.floor(remainingTime / 60);
+            const seconds = remainingTime % 60;
+            timerDisplay.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+            if (remainingTime <= 0) {
+                completeStopExercise();
+            }
+        }
     }
 });
