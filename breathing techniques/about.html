@@ -156,9 +156,6 @@
   .video-container iframe:hover {
     transform: scale(1.02);
   }
-  
-
-
 </style>
 </head>
 <body>
@@ -208,15 +205,17 @@
 </div>
 <div class="container9">
   <h1>Breathing Exercise</h1>
-  <div class="breathing-box">
-      <div class="circle" id="circle"></div>
-  </div>
-  <button id="startBtn">Start Breathing</button>
-  <button id="stopBtn" style="display: none;">Stop Breathing</button>
+        <div class="breathing-box">
+            <div class="circle" id="circle"></div>
+        </div>
+        <button id="startBtn">Start Breathing</button>
+        <button id="stopBtn" style="display: none;">Stop Breathing</button>
+        <button id="completeStopBtn" style="display: none;">Stop Exercise</button>
+        <button id="resetBtn">Reset</button>
+        <div id="timer">5:00</div>
+    </div>
+    <script src="gr.js"></script>
 </div>
-
-<script src="gr.js"></script>
-<div id="timer">05:00</div>
 
 <script>
   let timerInterval;
