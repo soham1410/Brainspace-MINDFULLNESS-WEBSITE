@@ -1,188 +1,188 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; /* Include padding and border in element's total width and height */
-}
-
-body {
-  font-size: 16px; /* 16px is standard, 120% might be too large for some users */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+  }
   
-  font-family: Arial, sans-serif; /* Providing a fallback font */
-  background-image: url('bg8.png');
-  background-size: cover;
-  background-repeat: no-repeat;
- /* background-position: bottom;*/
-}
-
-.header {
-  width: 30%;
-  margin: 50px auto 0;
-  color: white;
-  background: hsl(0, 60%, 66%);
-  text-align: center;
-  border: 1px solid #B0C4DE;
-  border-bottom: none;
-  border-radius: 10px 10px 0 0;
-  padding: 10px;
-}
-
-form, .content {
-  width: 30%;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #B0C4DE;
-  background: white;
-  border-radius: 0 0 10px 10px;
-}
-
-.input-group {
-  margin: 10px 0;
-}
-
-.input-group label {
-  display: block;
-  text-align: left;
-  margin: 3px 0;
-}
-
-.input-group input {
-  height: 30px;
-  width: calc(100% - 20px); /* Adjusted for padding */
-  padding: 5px 10px;
-  font-size: 16px;
-  border-radius: 5px;
-  border: 1px solid gray;
-}
-
-.btn {
-  padding: 10px;
-  font-size: 15px;
-  color: white;
-  background: red;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer; /* Adding pointer cursor to indicate interactivity */
-}
-
-.error, .success {
-  width: 92%;
-  margin: 0 auto;
-  padding: 10px;
-  border-radius: 5px;
-  text-align: left;
-}
-
-.error {
-  border: 1px solid #a94442;
-  color: #a94442;
-  background: #f2dede;
-}
-
-.success {
-  border: 1px solid #3c763d;
-  color: vhsl(0, 60%, 66%);
-  background: #dff0d8;
-  margin-bottom: 20px;
-}
-body{
-  font-family: Arial, sans-serif;
-  background-image: url('bg8.png');
-  background-size: cover;
-  background-repeat: no-repeat;
+  body {
+    font-size: 16px; /* 16px is standard, 120% might be too large for some users */
+    
+    font-family: Arial, sans-serif; /* Providing a fallback font */
+    background-image: url('bg8.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+   /* background-position: bottom;*/
+  }
   
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-header {
-  background-color: hsl(28, 77%, 70%);
-  color: hsl(27, 86%, 38%);
-  padding: 5px 0;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 40px;
-  text-align: left;
-
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav ul li a {
-  color: hsl(27, 85%, 46%);
-  text-decoration: none;
-}
-
-section {
-  padding: 40px 0;
-}
-
-section h2 {
-  font-size: 24px;
-}
-.dropdown {
-  position: relative; /* Change from absolute to relative */
-  color: hsl(27, 85%, 46%);
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: hsl(28, 77%, 70%);
-  min-width: 160px;
-  color: hsl(27, 85%, 46%);
-  z-index: 1;
-  top: 100%; /* Position the dropdown below the parent */
-  left: 0; /* Align the dropdown with the parent */
-}
-
-.dropdown.active .dropdown-content {
-  display: block;
-  position: absolute;
-  background-color: hsl(28, 77%, 70%);
-  color: hsl(27, 85%, 46%);
-}
-.dropdown-content a {
-  padding: 12px 30px;
-  text-decoration: none;
-  background-color: hsl(28, 77%, 70%);
-  color: hsl(27, 85%, 46%);
-  display: block; /* Display each option on a new line */
-}
-
-.dropdown-content a:hover {
-  background-color: hsl(28, 77%, 70%);
-  color: hsl(27, 85%, 46%);
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color:hsl(28, 77%, 70%);
-  color: hsl(27, 85%, 46%);
-  padding: 3px 0;
-  text-align: left;
-}
-
-
-
-
-
-
+  .header {
+    width: 30%;
+    margin: 50px auto 0;
+    color: white;
+    background: hsl(0, 60%, 66%);
+    text-align: center;
+    border: 1px solid #B0C4DE;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+  }
+  
+  form, .content {
+    width: 30%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #B0C4DE;
+    background: white;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  .input-group {
+    margin: 10px 0;
+  }
+  
+  .input-group label {
+    display: block;
+    text-align: left;
+    margin: 3px 0;
+  }
+  
+  .input-group input {
+    height: 30px;
+    width: calc(100% - 20px); /* Adjusted for padding */
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+  
+  .btn {
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Adding pointer cursor to indicate interactivity */
+  }
+  
+  .error, .success {
+    width: 92%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+  }
+  
+  .error {
+    border: 1px solid #a94442;
+    color: #a94442;
+    background: #f2dede;
+  }
+  
+  .success {
+    border: 1px solid #3c763d;
+    color: vhsl(0, 60%, 66%);
+    background: #dff0d8;
+    margin-bottom: 20px;
+  }
+  body{
+    font-family: Arial, sans-serif;
+    background-image: url('bg8.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  header {
+    background-color: hsl(28, 77%, 70%);
+    color: hsl(27, 86%, 38%);
+    padding: 5px 0;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 40px;
+    text-align: left;
+  
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: hsl(27, 85%, 46%);
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 40px 0;
+  }
+  
+  section h2 {
+    font-size: 24px;
+  }
+  .dropdown {
+    position: relative; /* Change from absolute to relative */
+    color: hsl(27, 85%, 46%);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: hsl(28, 77%, 70%);
+    min-width: 160px;
+    color: hsl(27, 85%, 46%);
+    z-index: 1;
+    top: 100%; /* Position the dropdown below the parent */
+    left: 0; /* Align the dropdown with the parent */
+  }
+  
+  .dropdown.active .dropdown-content {
+    display: block;
+    position: absolute;
+    background-color: hsl(28, 77%, 70%);
+    color: hsl(27, 85%, 46%);
+  }
+  .dropdown-content a {
+    padding: 12px 30px;
+    text-decoration: none;
+    background-color: hsl(28, 77%, 70%);
+    color: hsl(27, 85%, 46%);
+    display: block; /* Display each option on a new line */
+  }
+  
+  .dropdown-content a:hover {
+    background-color: hsl(28, 77%, 70%);
+    color: hsl(27, 85%, 46%);
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color:hsl(28, 77%, 70%);
+    color: hsl(27, 85%, 46%);
+    padding: 3px 0;
+    text-align: left;
+  }
+  
+  
+  
+  
+  
+  

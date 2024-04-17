@@ -29,8 +29,8 @@
     <h1>Calm Quest</h1>
     <nav>
       <ul>
+
         <li><a href="about.php">About</a></li>
-        <li><a href="tp.php">tp</a></li>
         <li><a href="benefit.php">Benefits</a></li>
         <li><a href="practise.php">Practices</a></li>
         <li><a href="contacts.php">Contacts</a></li>

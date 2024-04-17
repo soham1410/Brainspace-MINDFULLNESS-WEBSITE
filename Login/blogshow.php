@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Display Blogs</title>
+    <title>Display Blog</title>
     <style>
-        body {
+       body {
             font-family: Arial, sans-serif;
             background-color: #f8f8f8;
             padding: 20px;
@@ -44,44 +44,62 @@
 <body>
 
 <div class="container">
-    <h1>Recent Blogs</h1>
+    <h1>Blog</h1>
 
-    <?php
-    // Database connection parameters
-    $host = "localhost"; // MySQL server hostname
-    $username = "root"; // MySQL username
-    $password = ""; // MySQL password
-    $database = "blog"; // MySQL database name
+    
+<?php
+// Database connection parameters
+$host = "localhost"; // MySQL server hostname
+$username = "root"; // MySQL username
+$password = ""; // MySQL password
+$database = "blog"; // MySQL database name
 
-    // Create a new MySQLi instance
-    $conn = new mysqli($host, $username, $password, $database);
+// Create a new MySQLi instance
+$conn = new mysqli($host, $username, $password, $database);
 
-    // Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 
-    // Retrieve stored blogs from the database
-    $sql = "SELECT * FROM blog ORDER BY id DESC";
-    $result = $conn->query($sql);
+// If the connection is successful and form is submitted, insert feedback into database
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Retrieve form data submitted via POST method
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
 
-    // Display blogs
-    if ($result->num_rows > 0) {
-        while ($row = $result->fetch_assoc()) {
-            echo "<div class='blog'>";
-            echo "<p><strong>Name:</strong> " . $row['name'] . "</h3>";
-            echo "<p><strong>Email:</strong> " . $row['email'] . "</p>";
-            echo "<p><strong>Your Blog:</strong>" . $row['message'] . "</p>";
-            echo "</div>";
-        }
+    // Insert data into the database
+    $sql = "INSERT INTO blog (name, email, message) VALUES ('$name', '$email', '$message')";
+
+    if ($conn->query($sql) === TRUE) {
+        echo " ";
+        
     } else {
-        echo "<p>No blogs found.</p>";
+        echo "Error: " . $sql . "<br>" . $conn->error;
     }
+}
 
-    // Close the database connection
-    $conn->close();
-    ?>
-</div>
+// Retrieve stored feedback from the database
+$sql = "SELECT * FROM blog ORDER BY id DESC";
+$result = $conn->query($sql);
+
+// Display feedback
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        echo "<strong>Name:</strong> " . $row['name'] . "<br>";
+        echo "<strong>Email:</strong> " . $row['email'] . "<br>";
+        echo "<strong>Feedback:</strong> " . $row['message'] . "<br>";
+        
+
+    }
+} else {
+    echo "No Blog yet.";
+}
+
+// Close the database connection
+$conn->close();
+?>
 
 </body>
 </html>

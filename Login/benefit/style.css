@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: hsl(178, 67%, 83%); /* Light gray background color */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: hsl(187, 76%, 32%); /* Dark gray text color */
+    margin-top: 20px; /* Add some space above the heading */
+}
+
+.content {
+    background-color: #fff; /* White background color for content */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to content */
+    margin: 20px auto; /* Center content horizontally with some space around */
+    padding: 20px;
+    max-width: 600px; /* Limit content width for better readability */
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: hsl(187, 76%, 32%);
+    background-color: #f8f9fa; /* Light gray background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft box shadow */
+}
+
+
+p {
+    color: hsl(187, 76%, 32%); /* Gray text color */
+    margin-bottom: 15px; /* Add some space between paragraphs */
+}
+
+h2 {
+    color: hsl(187, 62%, 28%); /* Dark gray text color for headings */
+}
+
+ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+li {
+    color: hsl(187, 76%, 32%); /* Gray text color for list items */
+    margin-bottom: 10px; /* Add some space between list items */
+}
+.container img {
+    max-width: 20%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
