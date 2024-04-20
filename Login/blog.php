@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog writing </title>
-    <h1>BLOG WRITING</h1>
-    <h2>This is a place where you can share your part of life without any hesitation</h2>
+    <h1>BLOG WRITING EXERCISE</h1>
+    
     <style>
         /* CSS for feedback form */
         form {
             width: 400px;
             margin: 50px auto;
             padding: 20px;
-            background-color: #A3EBB1;
+            background-color: #F4BB44;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             
@@ -68,18 +68,48 @@
 
         /* CSS for page background */
         body {
-            background-color: #116530;
+            background-color:   #FFFAA0;
             font-family: Arial, sans-serif;
             text-align: center;
+            color:#900C3F;
             /*background-image: url('f3.png');*/
         }
+        .container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:#F4BB44;  
+    color:#900C3F; 
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container p {
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f9f9f9;
+    color: #FFFAA0;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
     </style>
 </head>
 <body>
+<div class=container>
+        <h3>
+In our modern lives, stress is an ever-present challenge.
+ But by embracing mindfulness and self-care practices, we can effectively manage stress and promote our overall well-being.
+ Here is one of the solution for your problem. 
+ This is a Blog writing exercise where you can feel free to write anything about your life or your problems. </h3>
+    </div>   
     
     <form action="blogshow.php" method="post">
         <h1>BLOG WRITING</H1>
-        <label for="name">Your Name:</label><br>
+     
+<label for="name">Your Name:</label><br>
         <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
         <label for="email">Your Email:</label><br>
         <input type="email" id="email" name="email" placeholder="Your Email" required><br><br>

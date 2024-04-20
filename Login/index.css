@@ -157,7 +157,7 @@
     background-color: hsl(28, 77%, 70%);
     color: hsl(27, 85%, 46%);
   }
-  .dropdown-content a {
+  .dropdown-content  {
     padding: 12px 30px;
     text-decoration: none;
     background-color: hsl(28, 77%, 70%);
@@ -165,7 +165,7 @@
     display: block; /* Display each option on a new line */
   }
   
-  .dropdown-content a:hover {
+  .dropdown-content :hover {
     background-color: hsl(28, 77%, 70%);
     color: hsl(27, 85%, 46%);
   }

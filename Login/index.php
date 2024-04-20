@@ -25,29 +25,35 @@
 <body>
 
 <header>
-  <div class="container">
+<div class="container">
     <h1>Calm Quest</h1>
     <nav>
-      <ul>
-
-        <li><a href="about.php">About</a></li>
-        <li><a href="benefit.php">Benefits</a></li>
-        <li><a href="practise.php">Practices</a></li>
-        <li><a href="contacts.php">Contacts</a></li>
-        <li><a href="feedback_form.php">Feedback</a></li>
-        <li class="dropdown stress-dropdown">
-          <a href="#" class="dropbtn">Stress</a>
-          <div class="dropdown-content">
-            <a href="blog.php">Blog  Writing </a>
-            <a href="breathing.php">Breathing Technique</a>
-            <!-- Add more dropdown items as needed -->
-          </div>
-        </li>
-        <li><a href="anxiety.php">Anxiety</a></li>
-        <!-- Add more navigation items as needed -->
-      </ul>
+        <ul>
+            <li><a href="about.php">About</a></li>
+            <li><a href="benefit.php">Benefits</a></li>
+            <li><a href="practise.php">Practices</a></li>
+            <li><a href="contacts.php">Contacts</a></li>
+            <li><a href="feedback_form.php">Feedback</a></li>
+            <li class="dropdown stress-dropdown">
+                <a href="#" class="dropbtn">Stress</a>
+                <div class="dropdown-content">
+                    <a href="blog.php">Blog Writing</a>
+                    <a href="breathing.php">Breathing Technique</a>
+                    <!-- Add more dropdown items as needed -->
+                </div>
+            </li>
+            <li class="dropdown anxiety-dropdown">
+                <a href="#" class="dropbtn">Anxiety</a>
+                <div class="dropdown-content">
+                <a href="box.php">Box Writing</a>
+                    <a href="333.php">333 Technique</a>
+                    <!-- Add more dropdown items as needed -->
+                </div>
+            </li>
+        </ul>
     </nav>
-  </div>
+</div>
+
 </header>
 
 <footer id="contact">
@@ -73,7 +79,13 @@
   document.querySelector('.stress-dropdown').addEventListener('click', function() {
     this.classList.toggle('active');
   });
+
+  // JavaScript to toggle active class on anxiety dropdown
+  document.querySelector('.anxiety-dropdown').addEventListener('click', function() {
+    this.classList.toggle('active');
+  });
 </script>
+
 
 </body>
 </html>

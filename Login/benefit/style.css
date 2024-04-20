@@ -48,9 +48,17 @@ li {
     color: hsl(187, 76%, 32%); /* Gray text color for list items */
     margin-bottom: 10px; /* Add some space between list items */
 }
-.container img {
-    max-width: 20%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
+/* CSS for images */
+img {
+    max-width: 100%; /* Make sure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure images are displayed as block elements */
+    margin: 20px auto; /* Add margin for spacing and center the images horizontally */
+  }
+  
+  /* CSS for container */
+  .container {
+    max-width: 800px; /* Adjust the maximum width of the container as needed */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  

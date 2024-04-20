@@ -1,0 +1,8 @@
+.special-image {
+    /* Your special styles here */
+    width: 100%; /* For example, make the image fill its container */
+    border: 2px solid #ff0000; /* Red border around the image */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+  }
+  
