@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Box Breathing Animation</title>
+<style>
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: #007bff;
+    animation: box-breathing 16s infinite;
+  }
+
+  @keyframes box-breathing {
+    0%, 100% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(1.2);
+    }
+    50% {
+      transform: scale(1);
+    }
+    75% {
+      transform: scale(0.8);
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>

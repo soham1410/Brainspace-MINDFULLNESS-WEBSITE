@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Progressive Muscle Relaxation (PMR)</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    background-image: url(bg.png);
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h1, h2 {
+    text-align: center;
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  ol {
+    margin-left: 20px;
+  }
+
+  .benefits {
+    margin-bottom: 30px;
+  }
+
+  .benefit-item {
+    margin-bottom: 15px;
+  }
+
+  .tips {
+    margin-top: 30px;
+  }
+
+  .tips ol {
+    margin-left: 20px;
+  }
+  /* Audio player styles */
+  audio {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /* Visualization container styles */
+  #visualization {
+    width: 100%;
+    height: 150px;
+    background-color: rgb(186, 234, 255);
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #bars {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 100%;
+  }
+
+  .bar {
+    width: 6px;
+    background-color: #007bff;
+    margin: 0 4px;
+    border-radius: 0 0 50% 50%;
+    animation: bar-animation 2s infinite alternate;
+  }
+
+  @keyframes bar-animation {
+    0% {
+      height: 10px;
+    }
+    100% {
+      height: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Progressive Muscle Relaxation (PMR)</h1>
+  <p>Progressive Muscle Relaxation (PMR) is a technique developed by American physician Edmund Jacobson in the 1920s. It involves tensing and then relaxing each muscle group in the body to reduce muscle tension and promote relaxation.</p>
+  
+  <h2>What is Progressive Muscle Relaxation?</h2>
+  <p>PMR is a form of therapy that helps release tension from muscles while helping individuals recognize and manage stress.</p>
+  <img src="pi.jpg" alt="Progressive Muscle Relaxation Image" style="display: block; margin: 0 auto; width: 80%;">
+  
+  
+  <h2>Benefits of PMR</h2>
+  <div class="benefits">
+    <div class="benefit-item">
+      <p>Reduces anxiety and tension</p>
+    </div>
+    <div class="benefit-item">
+      <p>Improves sleep quality</p>
+    </div>
+    <div class="benefit-item">
+      <p>Eases neck and low back pain</p>
+    </div>
+    <div class="benefit-item">
+      <p>Decreases systolic blood pressure</p>
+    </div>
+    <div class="benefit-item">
+      <p>Reduces the frequency of migraine attacks</p>
+    </div>
+    <div class="benefit-item">
+      <p>Helps with temporomandibular joint (TMJ) symptoms</p>
+    </div>
+  </div>
+  
+  <h2>How to Do Progressive Muscle Relaxation</h2>
+  <p>PMR involves tensing and then relaxing each muscle group in the body. Here's how to do it:</p>
+  <ol>
+    <li>Start by lying or sitting down in a quiet, comfortable area.</li>
+    <li>Take five deep, slow breaths to relax.</li>
+    <li>Focus on one muscle group at a time, tensing it for a few seconds, then relaxing it for twice as long before moving on to the next muscle group.</li>
+    <li>Tense your toes by curling them downward. Hold for 5 seconds, then relax for 10 seconds.</li>
+    <li>Tense your calf muscles by pointing your toes upward. Hold for 5 seconds, then relax for 10 seconds.</li>
+    <li>Tense your thigh muscles by pressing your knees together. Hold for 5 seconds, then relax for 10 seconds.</li>
+    <li>Contract your buttocks by squeezing them tightly. Hold for 5 seconds, then relax for 10 seconds.</li>
+    <li>Make fists with your hands and clench your fingers. Hold for 5 seconds, then relax for 10 seconds.</li>
+    <li>Tighten your biceps by flexing your arms. Hold for 5 seconds, then relax for 10 seconds.</li>
+    <li>Bring your shoulders up towards your ears to tense your shoulder muscles. Hold for 5 seconds, then relax for 10 seconds.</li>
+    <li>Press your tongue against the roof of your mouth to tense your jaw muscles. Hold for 5 seconds, then relax for 10 seconds.</li>
+    <li>Close your eyes tightly to scrunch up your facial muscles. Hold for 5 seconds, then relax for 10 seconds.</li>
+    <li>Repeat the entire process if desired, focusing on deeper relaxation with each repetition.</li>
+  </ol>
+  
+  <h2>Tips for Beginners</h2>
+  <div class="tips">
+    <ol>
+      <li>Set aside 15 to 20 minutes for PMR in a quiet, comfortable area.</li>
+      <li>Turn off your phone to avoid distractions.</li>
+      <li>Avoid holding your breath; inhale deeply when tensing muscles and exhale fully when relaxing.</li>
+      <li>Move in a sequence that works for you.</li>
+      <li>Wear loose, lightweight clothing.</li>
+      <li>Practice PMR regularly, even when feeling calm, to make it easier to learn.</li>
+      <li>Consider listening to a PMR recording for guidance.</li>
+    </ol>
+</ol>
+  
+<!-- Audio player -->
+<audio controls>
+  <source src="music.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+
+<!-- Visualization container -->
+<div id="visualization">
+  <div id="bars">
+    <!-- Visualization bars will be dynamically added here -->
+  </div>
+</div>
+</div>
+
+<script>
+// Create visualization bars dynamically
+const visualization = document.getElementById('visualization');
+const barsContainer = document.getElementById('bars');
+const numberOfBars = 50; // Adjust as needed
+
+for (let i = 0; i < numberOfBars; i++) {
+  const bar = document.createElement('div');
+  bar.classList.add('bar');
+  barsContainer.appendChild(bar);
+}
+</script>
+
+</body>
+</html>
