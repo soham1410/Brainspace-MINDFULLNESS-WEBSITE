@@ -7,7 +7,7 @@
     <style>
        body {
             font-family: Arial, sans-serif;
-            background-color: #f8f8f8;
+            background-color: #F8C5A9;
             padding: 20px;
         }
 
@@ -56,7 +56,7 @@
             margin: 10px 0;
         }
     </style>
-</head>
+</head> 
 <body>
 
 <div class="container">

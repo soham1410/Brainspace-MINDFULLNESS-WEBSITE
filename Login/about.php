@@ -84,7 +84,7 @@ It's been an incredible journey, blending my academic pursuits with my creative 
     </div>
                 </div>
         </div>
-                     
+        <form action="aboutshow.php" method="post">
         <div class="container">
         <section id="contact">
             <h2>Contact Us</h2>

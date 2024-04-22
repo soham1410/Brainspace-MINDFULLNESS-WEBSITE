@@ -11,7 +11,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #ADD8E6;
-    background-image: url('b4.png');*/ /* Specify the path to your image */
+    background-image: url('b4.png'); /* Specify the path to your image */
     background-size: cover; /* Cover the entire background */
     background-repeat: repeat; /* Prevent image from repeating */
     opacity: 0.9; /* Set opacity to create a semi-transparent effect */
@@ -55,7 +55,7 @@ body {
     max-width: 500px;
     margin: 10px;
     padding: 20px;
-    background-color: 	#89CFF0;
+    background-color:   #89CFF0;
     border-radius: 60px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -81,7 +81,7 @@ body {
     max-width: 1100px;
     margin: 10px;
     padding: 30px;
-    background-color:	#ADD8E6;
+    background-color: #ADD8E6;
     border-radius: 60px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.5s ease;
@@ -205,18 +205,19 @@ body {
   <iframe width="360" height="215" src="https://www.youtube.com/embed/4O9a72eYABM" frameborder="20" allowfullscreen></iframe>
 </div>
 <div class="container9">
-<h1>Breathing Exercise</h1>
-        <div class="breathing-box">
-            <div class="circle" id="circle"></div>
-        </div>
-        <div id="timer">5:00</div>
-        <button id="startBtn">Start Breathing</button>
-        <button id="stopBtn" style="display: none;">Stop Breathing</button>
-        <button id="completeStopBtn" style="display: none;">Stop Exercise</button>
-        <button id="resetBtn">Reset</button>
-        <script src="gr.js"></script>   
+  <h1>Breathing Exercise</h1>
+  <div class="breathing-box">
+      <div class="circle" id="circle"></div>
+  </div>
+  <button id="startBtn">Start Breathing</button>
+  <button id="stopBtn" style="display: none;">Stop Breathing</button>
+  <button id="completeStopBtn" style="display: none;">Stop Exercise</button>
+  <button id="resetBtn">Reset</button>
+  <div id="timer">5:00</div>
+  <div id="voiceInstructions" class="hidden"></div>
+  <button id="voiceBtn">Toggle Voice</button>
     </div>
-
+    <script src="diaph.js"></script>
 </div>
 <script>
   let timerInterval;

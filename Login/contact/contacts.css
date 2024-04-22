@@ -1,0 +1,134 @@
+/*salmon pink  #F98866 , peach #FFF2D7 */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #F98866;
+    color: hsl(0, 0%, 0%);
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    background-color: #FFF2D7; /* White background color for content */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to content */
+    margin: 20px auto; /* Center content horizontally with some space around */
+    padding: 20px;
+    max-width: 1000px; 
+}
+.container {
+    max-width: 3000px; /* Change this value to increase the width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 10px;
+}
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #F98866 ;
+    color: hsl(0, 0%, 0%);
+}
+/* Set width for specific columns */
+td:nth-child(1) { /* This selects the second column (Contact column) */
+    width: 120px; /* Adjust the width as needed */
+}
+
+
+/* Set width for specific columns */
+td:nth-child(3) { /* This selects the second column (Contact column) */
+    width: 180px; /* Adjust the width as needed */
+}
+
+
+
+h2 {
+    color: #F98866 ;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* Styling the bullet points */
+ul li::before {
+    content: "•";
+    color:  #F98866 ; /* Bullet color */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Adding spacing between bullet point and text */
+ul li {
+    padding-left: 1em;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    h2 {
+        font-size: 24px;
+    }
+}
+
+h1 {
+    color: #F98866  ;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+   
+    text-align: left;
+}
+
+th {
+    background-color: #f7a48b ;
+    color:  #471202;
+}
+
+/* Styling for even rows */
+tbody tr:nth-child(even) {
+    background-color: #ffbaa5 ;
+}
+
+/* Styling for odd rows */
+tbody tr:nth-child(odd) {
+    background-color:  #fba084 ;
+}
+td:nth-child(3) { /* This selects the second column (Contact column) */
+    width: 100px;
+}
+td:nth-child(6) { /* This selects the second column (Contact column) */
+    width: 100px;
+}

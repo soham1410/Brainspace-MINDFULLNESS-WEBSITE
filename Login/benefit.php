@@ -9,6 +9,13 @@
  
 <style>
     /* CSS for images */
+    body {
+    font-family: Arial, sans-serif;
+    background-color: hsl(178, 67%, 83%); 
+    background-image: url('benefit/beff.png');/* Light gray background color */
+    margin: 0;
+    padding: 0;
+}
 img {
   max-width: 100%; /* Make sure images don't exceed their container's width */
   height: auto; /* Maintain aspect ratio */
@@ -23,24 +30,13 @@ img {
   margin: 0 auto;
   align:right; /* Center the container horizontally */
 }
-.special-image {
- 
-    max-width: 85%;
-    height: 1520px;
-    display: block;
-    margin: 0 auto;
-
-    float: left; /* Float the image to the left */
-    margin-right: 20px; /* Add some space between the image and other content */
-    max-width: 24.6%; /* Set maximum width for the image */
-}
 
 
 </style>
 </head>
 <body>
 
-<img src="benefit/benefitt/s4.png" class="special-image">
+
 
     <div class="content">
         <h1 class="title">Benefits of Calm Quest</h1>

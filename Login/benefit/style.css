@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: hsl(178, 67%, 83%); /* Light gray background color */
+    background-color: hsl(178, 67%, 83%); 
+    background-image: url('bef.png');/* Light gray background color */
     margin: 0;
     padding: 0;
 }

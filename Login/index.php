@@ -45,8 +45,8 @@
             <li class="dropdown anxiety-dropdown">
                 <a href="#" class="dropbtn">Anxiety</a>
                 <div class="dropdown-content">
-                <a href="box.php">Box Writing</a>
-                    <a href="333.php">333 Technique</a>
+                <a href="box.php">Box Breathing</a>
+                    <a href="pmr.php">PMR Technique</a>
                     <!-- Add more dropdown items as needed -->
                 </div>
             </li>
