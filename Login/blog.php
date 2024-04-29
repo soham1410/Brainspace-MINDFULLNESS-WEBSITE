@@ -69,6 +69,7 @@
         /* CSS for page background */
         body {
             background-color:   #FFFAA0;
+            background-image: url('blog2.png');
             font-family: Arial, sans-serif;
             text-align: center;
             color:#900C3F;

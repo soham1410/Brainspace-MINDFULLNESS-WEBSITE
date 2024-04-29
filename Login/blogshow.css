@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+    background-image: url('blog.png');
     background-color:  #F4BB44;
     padding: 20px;
 }

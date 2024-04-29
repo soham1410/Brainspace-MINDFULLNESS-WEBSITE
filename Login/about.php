@@ -73,15 +73,29 @@ Through this platform, I aim to cultivate mindfulness and emotional well-being, 
 It's been an incredible journey, blending my academic pursuits with my creative endeavors, and I'm excited to continue making a positive impact through my work.</p>
             </div>
             <div class="creator-container">
-            <div class="creator-photo" style="background-image: url('about/k2.jpg');"></div>
+            <div class="creator-photo" style="background-image: url('about/aditya.jpeg');"></div>
             <div class="center">    
             <h2>Aditya Patil</h2></div>
             </div>
+            <p>
+            As the Co-founder of Calm Quest and Marketing Executive of the CSI Committee, I'm driven by the fusion of technology and mindfulness.<BR><BR>
+             My role involves leveraging marketing expertise to amplify our message and foster community engagement. <BR><BR>
+             With Calm Quest, we're dedicated to creating a digital sanctuary for mindfulness amidst modern chaos, while in the CSI Committee, I'm committed to driving impactful initiatives and meaningful connections.<BR><BR>
+             Together, we're shaping experiences, igniting passions, and making a tangible difference.<BR><BR>
             <div class="creator-container">
-            <div class="creator-photo" style="background-image: url('about/k2.jpg');"></div>
+            <div class="creator-photo" style="background-image: url('about/soham.jpeg');"></div>
              <div class="center">
                    <h2>Soham Ponkshe</h2>
     </div>
+   <P>
+     As the Co-founder of Calm Quest and Marketing Executive of the CSI Committee, I'm driven by the fusion of technology and mindfulness.<BR><BR>
+        I pride myself on my strong coding and implementation skills. 
+        When it comes to programming, I have a knack for diving into complex problems and finding elegant solutions.<BR><BR> 
+        One of my strengths lies in clearing errors and debugging code efficiently.<BR> 
+        I enjoy the challenge of identifying and fixing issues, as it allows me to hone my problem-solving abilities.<BR><BR>
+         My dedication to mastering new technologies keeps me motivated to stay at the forefront of the ever-evolving programming landscape.<BR><BR>
+          I'm passionate about coding because it gives me the opportunity to create something tangible and meaningful.
+         With every project, I strive for excellence, pushing myself to deliver the best possible results  <BR><BR>
                 </div>
         </div>
         <form action="aboutshow.php" method="post">

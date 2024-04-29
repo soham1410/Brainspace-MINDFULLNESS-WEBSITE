@@ -37,16 +37,16 @@
             <li class="dropdown stress-dropdown">
                 <a href="#" class="dropbtn">Stress</a>
                 <div class="dropdown-content">
-                    <a href="blog.php">Blog Writing</a>
-                    <a href="breathing.php">Breathing Technique</a>
+                    <a href="blog.php">1. Blog Writing</a><br><br>
+                    <a href="breathing.php">2. Breathing Technique</a><br><br>
                     <!-- Add more dropdown items as needed -->
                 </div>
             </li>
             <li class="dropdown anxiety-dropdown">
                 <a href="#" class="dropbtn">Anxiety</a>
                 <div class="dropdown-content">
-                <a href="box.php">Box Breathing</a>
-                    <a href="pmr.php">PMR Technique</a>
+                <a href="box.php">1. Box Writing</a><br><br>
+                    <a href="pmr.php">2. PMR Technique</a><br><br>
                     <!-- Add more dropdown items as needed -->
                 </div>
             </li>
@@ -66,8 +66,8 @@
       </ul>
        <!-- logged in user information -->
     <?php  if (isset($_SESSION['username'])) : ?>
-    	<p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
-    	<p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
+      <p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
+      <p> <a href="index.php?logout='1'" style="color: red;">logout</a> </p>
     <?php endif ?>
     </div>
   </footer>
@@ -75,16 +75,25 @@
 </html>
 
 <script>
-  // JavaScript to toggle active class on stress dropdown
-  document.querySelector('.stress-dropdown').addEventListener('click', function() {
-    this.classList.toggle('active');
+  // JavaScript to hide all dropdown content initially
+  document.querySelectorAll('.dropdown-content').forEach(function(content) {
+    content.style.display = 'none';
   });
 
-  // JavaScript to toggle active class on anxiety dropdown
-  document.querySelector('.anxiety-dropdown').addEventListener('click', function() {
-    this.classList.toggle('active');
+  // JavaScript to toggle dropdowns
+  document.querySelectorAll('.dropdown .dropbtn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === 'none' || dropdownContent.style.display === '') {
+        dropdownContent.style.display = 'block';
+      } else {
+        dropdownContent.style.display = 'none';
+      }
+    });
   });
 </script>
+
+
 
 
 </body>
